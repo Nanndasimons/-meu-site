@@ -2,43 +2,42 @@ body{
     background-color: #0a0a0a;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding:0;
-    
+    padding: 0;
+    font-size: 1rem; /* Define um tamanho base para a fonte */
 }
 nav{
     background-color: #0a0a0a;
     color: white;
-    padding: 50px;
+    padding: 3.125rem; /* 50px convertido para rem */
     text-align: center;
     display: flex;
-    font-size:19px;
-    width: 50px;
+    font-size: 1.19rem; /* 19px convertido para rem */
+    width: 3.125rem; /* 50px convertido para rem */
 }
 nav img{
-    width: 150px;
-    height: 150px;
+    width: 9.375rem; /* 150px convertido para rem */
+    height: 9.375rem; /* 150px convertido para rem */
 }
 div{
     color: white;
     display: justify;
     align-items: left;
-    font-size: 30px;
-    margin-top: -50px;
-    padding: 20px;
+    font-size: 1.875rem; /* 30px convertido para rem */
+    margin-top: -3.125rem; /* -50px convertido para rem */
+    padding: 1.25rem; /* 20px convertido para rem */
 }
 
 p {
     color: white;
-    font-size: 20px;
-  
+    font-size: 1.25rem; /* 20px convertido para rem */
 }
 button{
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px convertido para rem */
     background-color: rgb(191, 8, 100);
-    border-radius: 20px;   
-    padding: 10px;
-    margin: 0 0 0 100px;
+    border-radius: 1.25rem; /* 20px convertido para rem */
+    padding: 0.625rem; /* 10px convertido para rem */
+    margin: 0 0 0 6.25rem; /* 100px convertido para rem */
 }
 a:hover{
     background-color: #0a0a0a;
@@ -55,8 +54,8 @@ button a{
 }
 .banner p{
     color: white;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.25rem; /* 20px convertido para rem */
+    padding: 0.625rem; /* 10px convertido para rem */
     
 }
 .tex{
@@ -67,7 +66,7 @@ div img{
     background-image: url(imagens/fundo.png) ;
     width: 90%;
     height: auto;
-    border-radius:10%;
+    border-radius: 10%;
     background-size: cover;
 }
 
@@ -75,7 +74,7 @@ section {
     background-image: url(imagens/pessos.jpg);
     text-align: center;
     color: rgb(231, 47, 139);
-    padding: 200px;
+    padding: 12.5rem; /* 200px convertido para rem */
     
 }
 section p{
@@ -86,23 +85,23 @@ section p{
     background-color: #0a0a0a;
     text-align: center;
     color: rgb(231, 47, 139);
-    padding: 10px;
-    font-size: 40px;
-    font-style: bold 20px;
+    padding: 0.625rem; /* 10px convertido para rem */
+    font-size: 2.5rem; /* 40px convertido para rem */
+    font-style: bold 1.25rem; /* 20px convertido para rem */
 }
 
 .recursos{
-    margin: 20px;
-    padding: 10px;
+    margin: 1.25rem; /* 20px convertido para rem */
+    padding: 0.625rem; /* 10px convertido para rem */
 }
 .icon1, .icon2, .icon3{
     background-color: rgb(193, 14, 104);
     display: inline-block;
     background-size: contain;
-    padding: 10px;
-    margin: 40px;
-    width: 150px;   
-    height: 150px;
+    padding: 0.625rem; /* 10px convertido para rem */
+    margin: 2.5rem; /* 40px convertido para rem */
+    width: 9.375rem; /* 150px convertido para rem */
+    height: 9.375rem; /* 150px convertido para rem */
     border-radius: 15%;
 }
 .icon1{
@@ -118,36 +117,35 @@ section p{
 .p{
     border: white 2px solid;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px convertido para rem */
     display: inline-block;
-    padding: 20px;
-    margin: 30px;
+    padding: 1.25rem; /* 20px convertido para rem */
+    margin: 1.875rem; /* 30px convertido para rem */
     border-radius: 20%;
-    width: 150px;
-    height: 80px;
-    
-    
+    width: 9.375rem; /* 150px convertido para rem */
+    height: 5rem; /* 80px convertido para rem */
 }
+
 .container{
     text-align: center;
 }
 .treinos{
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px convertido para rem */
     background-image: url(imagens/academia.png);
     text-align: center;
     color: rgb(231, 47, 139);
-    padding: 100px;
+    padding: 6.25rem; /* 100px convertido para rem */
 }
 .treinos p{
     color: rgb(231, 47, 139);
 }
 
-
 .bem {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    gap: 1rem; /* Garante um espaçamento entre os itens */
 }
-
 
 .dicas {
     flex: 50%;
@@ -155,42 +153,131 @@ section p{
 }
 .dicas img{
     background-image: none;
-    padding: 100px;
-    width: 400px;
+    padding: 2rem; /* 100px convertido para rem */
+    width: 35rem; /* 400px convertido para rem */
     height: auto;
-    border-radius: 20px 0 0 20px; /* Para arredondar o canto esquerdo */
+    border-radius: 20px 0 0 20px;
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse o tamanho do container */
+    box-sizing: border-box; /* Para incluir o padding dentro da largura total */
+    margin-top: 5rem; /* Adiciona uma margem superior para empurrar a imagem para baixo */
 }
 
 .text-section2 {
     text-align: center;
     color: rgb(231, 47, 139);
     flex: 50%;
-    background-color: #f5f2f4; /* Cor de fundo rosa */
-    padding: 20px;
-    border-radius: 100px; /* Para arredondar o canto direito */
+    background-color: #f5f2f4;
+    padding: 1.25rem; /* 20px convertido para rem */
+    border-radius: 6.25rem; /* 100px convertido para rem */
 }
 .text-section2 p{
     color: rgb(231, 47, 139);
 }
 .text-section2 button{
-    margin-left: -40px;
+    margin-left: -2.5rem; /* -40px convertido para rem */
 }
 .footer{
     background-color: rgb(231, 47, 139);
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem; /* 20px convertido para rem */
 }
 .footer h2{
     color:rgb(10, 10, 10);
 }
 div p{
-    padding: 15px;
+    padding: 0.9375rem; /* 15px convertido para rem */
     color: #0a0a0a;
 }
 i{
     color: rgb(10, 10, 10);
-    margin: 5px;
+    margin: 0.3125rem; /* 5px convertido para rem */
 }
 i:hover{
     color: white;
+}
+@media (max-width: 720px) {
+    .recursos {
+        margin: 1rem; /* Ajustando para telas pequenas */
+        padding: 0.5rem; /* Ajustando para telas pequenas */
+    }
+
+    .icon1, .icon2, .icon3 {
+        width: 7rem; /* Menor tamanho para os ícones */
+        height: 7rem; /* Menor tamanho para os ícones */
+        margin: 1.25rem; /* Reduzindo o espaçamento */
+        padding: 0.5rem; /* Reduzindo o padding */
+    }
+
+    .p {
+        width: 7rem; /* Ajustando para um tamanho mais compacto */
+        height: 4rem; /* Ajustando para um tamanho mais compacto */
+        margin: 1.25rem; /* Ajustando o espaçamento */
+    }
+
+    /* Ajustando as fontes para dispositivos menores */
+    .p {
+        font-size: 1rem; /* 16px para texto mais legível em telas pequenas */
+    }
+
+    .banner {
+        flex-direction: column; /* Empilha os itens da banner verticalmente */
+        align-items: center; /* Alinha o conteúdo ao centro */
+        gap: 0.5rem; /* Reduz o gap entre os itens */
+    }
+
+    .banner p {
+        font-size: 1rem; /* Reduz a fonte para se ajustar melhor */
+        padding: 0.5rem; /* Reduz o padding */
+    }
+
+    .tex {
+        width: 100%; /* Faz com que a .tex ocupe toda a largura disponível */
+        margin: 0.625rem; /* Ajusta o margin */
+    }
+
+    /* Ajuste da imagem */
+    div img {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 10%;
+        margin-bottom: 1rem; /* Espaço para evitar sobreposição com o botão */
+    }
+
+    .bem {
+        flex-direction: column; /* Empilha os itens da .bem verticalmente */
+        align-items: center; /* Centraliza os itens */
+        gap: 1rem; /* Reduz o gap entre os itens */
+    }
+
+    /* Ajusta a .dicas */
+    .dicas {
+        flex: 100%; /* Faz com que a .dicas ocupe toda a largura */
+        padding: 2rem; /* Reduz o padding para telas pequenas */
+    }
+
+    /* Ajusta a imagem dentro da .dicas */
+    .dicas img {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura da tela */
+        padding: 0; /* Remove o padding para não forçar o tamanho */
+        border-radius: 20px; /* Mantém o border-radius */
+        max-width: 100%; /* Garante que a imagem se ajuste ao container */
+    }
+
+    /* Ajuste da .text-section2 */
+    .text-section2 {
+        flex: 100%; /* Faz com que a .text-section2 ocupe toda a largura */
+        padding: 1rem; /* Reduz o padding */
+        border-radius: 1rem; /* Menor border-radius para telas pequenas */
+    }
+
+    /* Ajuste do texto e botões */
+    .text-section2 p {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .text-section2 button {
+        margin-left: 0; /* Remove o deslocamento negativo do botão */
+    }
+
+
 }
