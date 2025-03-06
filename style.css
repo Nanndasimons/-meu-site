@@ -1,254 +1,196 @@
-/* Estilos gerais */
-body {
+body{
     background-color: #0a0a0a;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding:0;
+    
 }
-
-nav {
+nav{
     background-color: #0a0a0a;
     color: white;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
+    font-size:19px;
+    width: 50px;
 }
-
-nav img {
-    width: 100px;
-    height: auto; /* Mantém a proporção da imagem */
+nav img{
+    width: 150px;
+    height: 150px;
 }
-
-div {
+div{
     color: white;
+    display: justify;
+    align-items: left;
     font-size: 30px;
+    margin-top: -50px;
     padding: 20px;
 }
 
 p {
     color: white;
     font-size: 20px;
+  
 }
-
-button {
+button{
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     background-color: rgb(191, 8, 100);
-    border-radius: 20px;
+    border-radius: 20px;   
     padding: 10px;
-    margin: 10px auto;
-    display: block;
+    margin: 0 0 0 100px;
 }
-
-a:hover {
+a:hover{
     background-color: #0a0a0a;
     color: white;
 }
-
-button a {
+button a{
     color: white;
     text-decoration: none;
 }
-
-.banner {
+.banner{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
-
-.banner p {
+.banner p{
     color: white;
     font-size: 20px;
     padding: 10px;
+    
+}
+.tex{
+    flex: 1;
 }
 
-div img {
+div img{
+    background-image: url(imagens/fundo.png) ;
     width: 90%;
     height: auto;
-    border-radius: 10%;
+    border-radius:10%;
+    background-size: cover;
 }
 
 section {
     background-image: url(imagens/pessos.jpg);
     text-align: center;
     color: rgb(231, 47, 139);
-    padding: 100px 20px;
+    padding: 200px;
+    
 }
-
-.recursos {
+section p{
+    color: rgb(231, 47, 139);
+}
+.recursos{
+    background-image: none;
     background-color: #0a0a0a;
     text-align: center;
     color: rgb(231, 47, 139);
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 40px;
+    font-style: bold 20px;
 }
 
-.icon1, .icon2, .icon3 {
+.recursos{
+    margin: 20px;
+    padding: 10px;
+}
+.icon1, .icon2, .icon3{
     background-color: rgb(193, 14, 104);
     display: inline-block;
+    background-size: contain;
     padding: 10px;
-    margin: 20px;
-    width: 120px;
-    height: 120px;
+    margin: 40px;
+    width: 150px;   
+    height: 150px;
+    border-radius: 15%;
+}
+.icon1{
+    background-image: url(imagens/halter.png);
+}
+.icon2{ 
+    background-image: url(imagens/tenis.png);
+}
+.icon3{
+    background-image: url(imagens/coracao.png);
 }
 
-.p {
+.p{
     border: white 2px solid;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
-    padding: 15px;
-    margin: 20px;
+    padding: 20px;
+    margin: 30px;
     border-radius: 20%;
-    width: 120px;
-    height: 70px;
+    width: 150px;
+    height: 80px;
+    
+    
 }
-
-.container {
+.container{
     text-align: center;
 }
-
-.treinos {
-    font-size: 25px;
+.treinos{
+    font-size: 30px;
     background-image: url(imagens/academia.png);
     text-align: center;
     color: rgb(231, 47, 139);
-    padding: 80px;
+    padding: 100px;
 }
+.treinos p{
+    color: rgb(231, 47, 139);
+}
+
 
 .bem {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
 }
+
 
 .dicas {
-    flex: 100%;
-    padding: 20px;
+    flex: 50%;
+    position: relative;
 }
-
-.dicas img {
-    width: 80%;
+.dicas img{
+    background-image: none;
+    padding: 100px;
+    width: 400px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px; /* Para arredondar o canto esquerdo */
 }
 
 .text-section2 {
     text-align: center;
     color: rgb(231, 47, 139);
-    background-color: #f5f2f4;
+    flex: 50%;
+    background-color: #f5f2f4; /* Cor de fundo rosa */
     padding: 20px;
-    border-radius: 20px;
-    margin: 20px;
+    border-radius: 100px; /* Para arredondar o canto direito */
 }
-
-.footer {
+.text-section2 p{
+    color: rgb(231, 47, 139);
+}
+.text-section2 button{
+    margin-left: -40px;
+}
+.footer{
     background-color: rgb(231, 47, 139);
     text-align: center;
     padding: 20px;
 }
-
-.footer h2 {
-    color: rgb(10, 10, 10);
+.footer h2{
+    color:rgb(10, 10, 10);
 }
-
-i {
+div p{
+    padding: 15px;
+    color: #0a0a0a;
+}
+i{
     color: rgb(10, 10, 10);
     margin: 5px;
 }
-
-i:hover {
+i:hover{
     color: white;
-}
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    nav img {
-        width: 80px; /* Ajuste para uma largura menor */
-    }
-
-    div {
-        font-size: 24px; /* Ajuste para um tamanho de fonte menor */
-        text-align: center;
-    }
-
-    p {
-        font-size: 18px; /* Ajuste para um tamanho de fonte menor */
-    }
-
-    .banner {
-        flex-direction: column; /* Muda a direção para coluna em telas menores */
-    }
-
-    .icon1, .icon2, .icon3 {
-        width: 100px; /* Ajuste para uma largura menor */
-        height: 100px; /* Ajuste para uma altura menor */
-    }
-
-    .p {
-        width: 100px; /* Ajuste para uma largura menor */
-        height: 60px;
-        height: 60px; /* Ajuste para uma altura menor */
-        font-size: 16px; /* Ajuste para um tamanho de fonte menor */
-    }
-
-    .treinos {
-        font-size: 22px; /* Ajuste para um tamanho de fonte menor */
-        padding: 50px; /* Ajuste o padding para telas menores */
-    }
-
-    .dicas img {
-        width: 100%; /* Imagem ocupa 100% da largura do contêiner */
-    }
-
-    .text-section2 {
-        padding: 15px;
-        font-size: 18px; /* Ajuste para um tamanho de fonte menor */
-    }
-}
-
-/* Adicionando uma media query para telas muito pequenas */
-@media screen and (max-width: 480px) {
-    nav {
-        font-size: 16px; /* Ajuste para um tamanho de fonte menor */
-    }
-
-    div {
-        font-size: 20px; /* Ajuste para um tamanho de fonte menor */
-    }
-
-    p {
-        font-size: 16px; /* Ajuste para um tamanho de fonte menor */
-    }
-
-    .icon1, .icon2, .icon3 {
-        width: 80px; /* Ajuste para uma largura menor */
-        height: 80px; /* Ajuste para uma altura menor */
-    }
-
-    .p {
-        width: 80px; /* Ajuste para uma largura menor */
-        height: 50px; /* Ajuste para uma altura menor */
-        font-size: 14px; /* Ajuste para um tamanho de fonte menor */
-    }
-
-    .treinos {
-        font-size: 20px; /* Ajuste para um tamanho de fonte menor */
-        padding: 30px; /* Ajuste o padding para telas menores */
-    }
-
-    .text-section2 {
-        font-size: 16px; /* Ajuste para um tamanho de fonte menor */
-    }
 }
